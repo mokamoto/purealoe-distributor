@@ -32,7 +32,7 @@ function renderBundle(bundle, isAnimated) {
                         </button>
                         <button class="btn btn-info" onclick="orderBundle('${bundle.bundleId}')" style="margin-bottom: 4px;">
                             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                            商品セットをオーダー
+                            オーダーする
                         </button>
                     </div>
                     <div id="details-${bundle.bundleId}" class="col-md-12"></div>
