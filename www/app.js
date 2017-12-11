@@ -18,21 +18,21 @@ function renderBundle(bundle, isAnimated) {
                     <div class="col-md-12 col-lg-7">
                         <table>
                             <tr>
-                                <td class="panel-table-label">Description:</td><td>${bundle.bundleDescription}</td>
+                                <td class="panel-table-label">概要:</td><td>${bundle.bundleDescription}</td>
                             </tr>
                             <tr>
-                            <td class="panel-table-label">Items:</td><td>${bundle.qty}</td>
+                            <td class="panel-table-label">商品数:</td><td>${bundle.qty}</td>
                         </tr>
                     </table>
                     </div>   
                     <div class="col-md-12 col-lg-5">
                         <button class="btn btn-info" onclick="getBundleDetails('${bundle.bundleId}')" style="margin-bottom: 4px;">
                             <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
-                            View Details
+                            詳細を見る
                         </button>
                         <button class="btn btn-info" onclick="orderBundle('${bundle.bundleId}')" style="margin-bottom: 4px;">
                             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                            Order Bundle
+                            商品セットをオーダー
                         </button>
                     </div>
                     <div id="details-${bundle.bundleId}" class="col-md-12"></div>
@@ -55,7 +55,7 @@ function renderBundleDetails(bundle, items) {
             <tr>
                 <td><img src="${item.pictureURL}" style="height:50px"/></td>
                 <td>${item.productTitle}</td>
-                <td>$${item.price}</td>
+                <td>￥${item.price}</td>
                 <td>${item.qty}</td>
             </tr>`
     });
