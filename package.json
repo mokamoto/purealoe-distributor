@@ -1,9 +1,9 @@
 {
-  "name": "purealoe-distributor",
+  "name": "jp-purealoe-distributor",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "Christophe Coenraets <ccoenraets@gmail.com> (http://coenraets.org/)",
+  "author": "Mitsuhuro Okamoto <mokamoto@salesforce.com>",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.3",

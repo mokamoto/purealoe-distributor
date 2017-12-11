@@ -46,9 +46,9 @@ function renderBundleDetails(bundle, items) {
     var html = `
         <table class="table">
             <tr>
-                <th colspan="2">Product</th>
-                <th>MSRP</th>
-                <th>Qty</th>
+                <th colspan="2">商品</th>
+                <th>希望小売価格</th>
+                <th>数量</th>
             </tr>`;
     items.forEach(function(item) {
         html = html + `

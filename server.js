@@ -9,7 +9,7 @@ let io = require('socket.io')(server);
 let accountId;
 
 let getBundles = (req, res) => {
-    let q = "SELECT Id, Name, Description__c, Qty__c FROM Bundle__c WHERE Status__c='Submitted to Distributors'";
+    let q = "SELECT Id, Name, Description__c, Qty__c FROM Bundle__c WHERE Status__c='販売協力店に送信済み'";
     org.query({ query: q }, (err, resp) => {
         if (err) {
             console.log(err);
